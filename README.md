@@ -46,13 +46,133 @@ This repository presents the **first end-to-end Causal-Invariant Digital Twin (C
 <table>
 <thead>
 <tr style="background-color:#0f172a;color:white;">
-<th>Work</th><th>Primary Technique</th><th>Eval. Focus</th><th>Key Limitation</th>
-<th>DT</th><th>Learn</th><th>V2X</th><th>Causal</th><th>Interv.</th><th>Edge</th><th>Ethics</th>
+<th>Work</th>
+<th>Primary Technique</th>
+<th>Eval. Focus</th>
+<th>Key Limitation</th>
+<th>DT</th>
+<th>Learn</th>
+<th>V2X</th>
+<th>Causal</th>
+<th>Interv.</th>
+<th>Edge</th>
+<th>Ethics</th>
 </tr>
 </thead>
 <tbody>
-<tr><td><b>CIDT (2026)</b></td><td><b>Causal-invariant DT</b></td><td><b>Robust decision validation</b></td><td>—</td>
-<td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
+
+<tr style="background-color:#f8fafc;">
+<td>Wu et al. (2025)</td>
+<td>V2X corridor DT sync</td>
+<td>Integration accuracy</td>
+<td>No decision robustness</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+</tr>
+
+<tr style="background-color:#ecfeff;">
+<td>Li et al. (2025)</td>
+<td>Risk-aware mobility DT</td>
+<td>Situational awareness</td>
+<td>Correlation-based</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:#f59e0b;">◐</td>
+<td style="color:red;">✘</td>
+</tr>
+
+<tr style="background-color:#fefce8;">
+<td>Xun et al. (2025)</td>
+<td>DT trajectory prediction</td>
+<td>Prediction accuracy</td>
+<td>Shift sensitive</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+</tr>
+
+<tr style="background-color:#fff7ed;">
+<td>Lim et al. (2024)</td>
+<td>Graph-based causal DT</td>
+<td>Root-cause inference</td>
+<td>Not AV decisions</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+</tr>
+
+<tr style="background-color:#fee2e2;">
+<td>Thomas et al. (2023)</td>
+<td>Causal imitation learning</td>
+<td>Generalization</td>
+<td>No safety validation</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+</tr>
+
+<tr style="background-color:#e0f2fe;">
+<td><b>SEFN (2026)</b></td>
+<td>Event-driven fault modeling</td>
+<td>Fault reliability</td>
+<td>—</td>
+<td style="color:red;">✘</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+</tr>
+
+<tr style="background-color:#dbeafe;">
+<td><b>SCTM (2026)</b></td>
+<td>Structural causal DT</td>
+<td>Causal attribution</td>
+<td>No invariance</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+</tr>
+
+<tr style="background-color:#bbf7d0;">
+<td><b>CIDT (2026)</b></td>
+<td><b>Causal-invariant DT</b></td>
+<td><b>Robust decision validation</b></td>
+<td><b>—</b></td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+</tr>
+
 </tbody>
 </table>
 
@@ -64,13 +184,13 @@ This repository accompanies the paper:
 
 **“Causal-Invariant Digital Twin for Robust Autonomous Vehicle Decision Validation under 5G-V2X Distribution Shifts”**
 
-Main contributions include causal-invariant validation, sensor–event fault modeling, structural causal twins with interventions, ethical AI robustness, and edge-feasible deployment.
+Key contributions include causal-invariant validation, sensor–event fault modeling, structural causal twins with interventions, ethical AI robustness, and edge-feasible deployment.
 
 ---
 
 ## 📊 Dataset: Driver Behavior and Route Anomaly Detection (DBRA24)
 
-**Public Kaggle Dataset:**  
+**Dataset Link:**  
 https://www.kaggle.com/datasets/datasetengineer/driver-behavior-and-route-anomaly-dataset-dbra24
 
 **BibTeX citation:**
@@ -91,6 +211,16 @@ https://www.kaggle.com/datasets/datasetengineer/driver-behavior-and-route-anomal
 <p align="center">
   <img src="figs/structural_causal_twin_model.png" width="90%">
 </p>
+
+---
+
+## 🔁 Interventional Validation
+
+<p align="center">
+  <img src="Results/SectionF_CausalGraph_Interventions/interventional_analysis.png" width="85%">
+</p>
+
+CIDT evaluates decisions under explicit do-interventions on V2X latency, driver behavior, and environmental conditions.
 
 ---
 
@@ -115,9 +245,15 @@ README.md    → This document
 
 ## 🏁 Key Takeaway
 
-**Robustness without causality is illusory.** CIDT validates autonomous decisions under distribution shifts using causal invariance and interventions.
+**Robustness without causality is illusory.**  
+CIDT validates autonomous decisions under distribution shifts using causal invariance and interventions.
 
 ---
 
 ## 📜 License
 Apache License 2.0
+
+---
+
+## 📬 Contact
+For questions or reproducibility inquiries, please open a GitHub issue.
