@@ -38,6 +38,154 @@ This repository presents the **first end-to-end Causal-Invariant Digital Twin (C
 
 ---
 
+## 📚 Literature Comparison: Digital Twin Decision Validation
+
+**Legend:**  
+<span style="color:green;font-weight:bold;">✔</span> Explicitly supported &nbsp;&nbsp;
+<span style="color:red;font-weight:bold;">✘</span> Not supported &nbsp;&nbsp;
+<span style="color:#f59e0b;font-weight:bold;">◐</span> Partial / indirect
+
+<table>
+<thead>
+<tr style="background-color:#0f172a;color:white;">
+<th>Work</th>
+<th>Primary Technique</th>
+<th>Eval. Focus</th>
+<th>Key Limitation</th>
+<th>DT</th>
+<th>Learn</th>
+<th>V2X</th>
+<th>Causal</th>
+<th>Interv.</th>
+<th>Edge</th>
+<th>Ethics</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr style="background-color:#f8fafc;">
+<td>Wu et al. (2025)</td>
+<td>V2X corridor DT sync</td>
+<td>Integration accuracy</td>
+<td>No decision robustness</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+</tr>
+
+<tr style="background-color:#ecfeff;">
+<td>Li et al. (2025)</td>
+<td>Risk-aware mobility DT</td>
+<td>Situational awareness</td>
+<td>Correlation-based</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:#f59e0b;">◐</td>
+<td style="color:red;">✘</td>
+</tr>
+
+<tr style="background-color:#fefce8;">
+<td>Xun et al. (2025)</td>
+<td>DT trajectory prediction</td>
+<td>Prediction accuracy</td>
+<td>Shift sensitive</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+</tr>
+
+<tr style="background-color:#fff7ed;">
+<td>Lim et al. (2024)</td>
+<td>Graph-based causal DT</td>
+<td>Root-cause inference</td>
+<td>Not AV decisions</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+</tr>
+
+<tr style="background-color:#fee2e2;">
+<td>Thomas et al. (2023)</td>
+<td>Causal imitation learning</td>
+<td>Generalization</td>
+<td>No safety validation</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+</tr>
+
+<tr style="background-color:#e0f2fe;">
+<td><b>SEFN (2026)</b></td>
+<td>Event-driven fault modeling</td>
+<td>Fault reliability</td>
+<td>—</td>
+<td style="color:red;">✘</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:red;">✘</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+</tr>
+
+<tr style="background-color:#dbeafe;">
+<td><b>SCTM (2026)</b></td>
+<td>Structural causal DT</td>
+<td>Causal attribution</td>
+<td>No invariance</td>
+<td style="color:green;">✔</td>
+<td style="color:red;">✘</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+<td style="color:green;">✔</td>
+</tr>
+
+<tr style="background-color:#bbf7d0;">
+<td><b>CIDT (2026)</b></td>
+<td><b>Causal-invariant DT</b></td>
+<td><b>Robust decision validation</b></td>
+<td><b>—</b></td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+<td style="color:green;font-weight:bold;">✔</td>
+</tr>
+
+</tbody>
+</table>
+
+**Key takeaway:**  
+> Existing DT frameworks address *components* of robustness, but **only CIDT jointly supports causal learning, interventions, ethical stability, and edge feasibility for decision validation under distribution shifts**.
+
+---
+
+---
+
 ## 🧠 CIDT Architecture
 
 <p align="center">
