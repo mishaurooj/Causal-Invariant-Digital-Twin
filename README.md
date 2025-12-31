@@ -183,6 +183,55 @@ This repository presents the **first end-to-end Causal-Invariant Digital Twin (C
 > Existing DT frameworks address *components* of robustness, but **only CIDT jointly supports causal learning, interventions, ethical stability, and edge feasibility for decision validation under distribution shifts**.
 
 ---
+---
+
+## 📌 Paper Contributions
+
+This repository accompanies the paper:
+
+**“Causal-Invariant Digital Twin for Robust Autonomous Vehicle Decision Validation under 5G-V2X Distribution Shifts”**
+
+The main scientific contributions are summarized as follows:
+
+1. **Causal-Invariant Digital Twin (CIDT)**  
+   A novel digital twin framework that validates *autonomous vehicle decisions* under distribution shifts by enforcing **causal invariance**, rather than optimizing predictive accuracy or control performance.
+
+2. **Sensor–Event Fault Network (SEFN)**  
+   A dedicated reliability modeling module that estimates **latent sensing, event, and V2X communication faults** without leaking fault information into prediction, enabling principled causal attribution and conservative risk gating.
+
+3. **Invariant Representation Learning for Decision Validation**  
+   The framework integrates **Invariant Risk Minimization (IRM)** to suppress environment- and communication-dependent spurious correlations, ensuring that validated decisions rely on stable causal mechanisms.
+
+4. **Structural Causal Digital Twin with Interventions**  
+   A **structural causal model (SCM)** is constructed over latent vehicle, driver, environment, communication, fault, action, and outcome variables, enabling **do-calculus–based interventional evaluation** without retraining.
+
+5. **Intervention-Based Robustness Metrics**  
+   CIDT introduces and evaluates robustness using **failure probability, invariant risk gap, intervention consistency score, and intervention sensitivity index**, moving beyond accuracy-centric validation.
+
+6. **Ethical AI Validation under Distribution Shift**  
+   Ethical reliability is assessed via **group-wise risk stability and false-safe analysis**, demonstrating that causal invariance yields fair and consistent behavior without explicit demographic conditioning.
+
+7. **Edge-Feasible Deployment Analysis**  
+   Post-training dynamic quantization is evaluated to study **efficiency–validity trade-offs**, showing that CIDT preserves validation integrity under realistic edge constraints.
+
+---
+
+## 📊 Dataset: Driver Behavior and Route Anomaly Detection (DBRA24)
+
+This study uses the **DBRA24** real-world autonomous driving dataset, publicly available on Kaggle:
+
+🔗 **Dataset Link:**  
+https://www.kaggle.com/datasets/datasetengineer/driver-behavior-and-route-anomaly-dataset-dbra24
+
+**Citation (BibTeX):**
+```bibtex
+@misc{dbra24kaggle,
+  author       = {Dataset Engineer},
+  title        = {{Driver Behavior and Route Anomaly Detection (DBRA24)}},
+  howpublished = {\url{https://www.kaggle.com/datasets/datasetengineer/driver-behavior-and-route-anomaly-dataset-dbra24}},
+  year         = {2024},
+  note         = {Accessed: 2025-10-08}
+}
 
 ---
 
