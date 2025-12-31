@@ -208,15 +208,12 @@ https://www.kaggle.com/datasets/datasetengineer/driver-behavior-and-route-anomal
 
 ---
 
-## 🖼️ Figures and Visual Analysis (Complete Experimental Evidence)
-
-This section presents **all figures included in the `figs/` directory**, with concise technical explanations describing **what is shown, why it matters, and how it supports the CIDT framework**.
-
+## 🖼️ Experimental Evidence
 ---
 
 ### Figure 1: Overall CIDT Framework
 <p align="center">
-  <img src="figs/cidt.png" width="85%">
+  <img src="figs/cidt.png" width="100%">
 </p>
 
 **Explanation:**  
@@ -226,7 +223,7 @@ This figure illustrates the complete **Causal-Invariant Digital Twin (CIDT)** pi
 
 ### Figure 2: Structural Causal Twin Model
 <p align="center">
-  <img src="figs/structural_causal_twin_model.png" width="85%">
+  <img src="figs/structural_causal_twin_model.png" width="100%">
 </p>
 
 **Explanation:**  
@@ -236,7 +233,7 @@ The structural causal model (SCM) defines causal dependencies among latent vehic
 
 ### Figure 3: Learned Causal Graph
 <p align="center">
-  <img src="figs/causal_graph.png" width="65%">
+  <img src="figs/causal_graph.png" width="1005%">
 </p>
 
 **Explanation:**  
@@ -246,7 +243,7 @@ The learned causal graph captures directional causal relations inferred from inv
 
 ### Figure 4: Causal Effect Decomposition
 <p align="center">
-  <img src="figs/causal_effect_decomposition.png" width="75%">
+  <img src="figs/causal_effect_decomposition..png" width="100%">
 </p>
 
 **Explanation:**  
@@ -256,7 +253,7 @@ This figure decomposes the total decision outcome into direct, indirect, and med
 
 ### Figure 5: Environment Distribution by Name
 <p align="center">
-  <img src="figs/env_distribution_by_name_WITH_LEGEND.png" width="80%">
+  <img src="figs/env_distribution_by_name_WITH_LEGEND.png" width="100%">
 </p>
 
 **Explanation:**  
