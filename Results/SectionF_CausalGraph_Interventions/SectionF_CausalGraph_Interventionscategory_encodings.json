@@ -1,0 +1,18 @@
+{
+  "weather_conditions": {
+    "0": "Cloudy",
+    "1": "Foggy",
+    "2": "Rainy",
+    "3": "Sunny"
+  },
+  "road_type": {
+    "0": "Highway",
+    "1": "Rural",
+    "2": "Urban"
+  },
+  "traffic_condition": {
+    "0": "Heavy",
+    "1": "Light",
+    "2": "Moderate"
+  }
+}

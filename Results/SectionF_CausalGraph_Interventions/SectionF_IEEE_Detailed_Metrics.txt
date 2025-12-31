@@ -1,0 +1,40 @@
+IEEE TRANSACTIONS — DETAILED CAUSAL METRICS
+======================================================================
+Outcome: anomalous_event
+Global Event Rate: 0.1002
+
+1. ENVIRONMENT CONDITIONS → OUTCOME
+----------------------------------------------------------------------
+
+Environment Variable: weather_conditions
+  Cloudy: Rate=0.1018, ΔRisk=+0.0016, RR=1.0163
+  Foggy: Rate=0.0992, ΔRisk=-0.0010, RR=0.9899
+  Rainy: Rate=0.1039, ΔRisk=+0.0037, RR=1.0374
+  Sunny: Rate=0.0995, ΔRisk=-0.0006, RR=0.9938
+
+Environment Variable: road_type
+  Highway: Rate=0.0999, ΔRisk=-0.0003, RR=0.9975
+  Rural: Rate=0.0995, ΔRisk=-0.0006, RR=0.9938
+  Urban: Rate=0.1005, ΔRisk=+0.0003, RR=1.0029
+
+Environment Variable: traffic_condition
+  Heavy: Rate=0.0980, ΔRisk=-0.0022, RR=0.9782
+  Light: Rate=0.1013, ΔRisk=+0.0011, RR=1.0113
+  Moderate: Rate=0.1004, ΔRisk=+0.0002, RR=1.0020
+
+2. BEHAVIOR METRICS → OUTCOME
+----------------------------------------------------------------------
+speed: Δμ=+0.2988, Corr=0.0030
+acceleration: Δμ=+0.0016, Corr=0.0002
+steering_angle: Δμ=+0.4156, Corr=0.0084
+brake_usage: Δμ=-0.0076, Corr=-0.0010
+lane_deviation: Δμ=-0.0018, Corr=-0.0034
+
+3. AGGREGATE METRICS → OUTCOME
+----------------------------------------------------------------------
+acceleration_variation: Δμ=+0.0008, Corr=0.0015
+behavioral_consistency_index: Δμ=-0.0006, Corr=-0.0011
+route_deviation_score: Δμ=-0.0033, Corr=-0.0062
+
+ATE(weather → anomalous_event) = -0.0006
+======================================================================

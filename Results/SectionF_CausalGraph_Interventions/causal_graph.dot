@@ -1,0 +1,27 @@
+strict digraph {
+weather_conditions;
+speed;
+brake_usage;
+lane_deviation;
+road_type;
+traffic_condition;
+anomalous_event;
+acceleration;
+steering_angle;
+acceleration_variation;
+behavioral_consistency_index;
+route_deviation_score;
+weather_conditions -> speed;
+weather_conditions -> brake_usage;
+weather_conditions -> lane_deviation;
+speed -> anomalous_event;
+brake_usage -> anomalous_event;
+lane_deviation -> anomalous_event;
+road_type -> speed;
+traffic_condition -> speed;
+acceleration -> anomalous_event;
+steering_angle -> anomalous_event;
+acceleration_variation -> anomalous_event;
+behavioral_consistency_index -> anomalous_event;
+route_deviation_score -> anomalous_event;
+}
