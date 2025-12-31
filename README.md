@@ -206,21 +206,180 @@ https://www.kaggle.com/datasets/datasetengineer/driver-behavior-and-route-anomal
 
 ---
 
-## 🧠 CIDT Architecture
+---
 
-<p align="center">
-  <img src="figs/structural_causal_twin_model.png" width="90%">
-</p>
+## 🖼️ Figures and Visual Analysis (Complete Experimental Evidence)
+
+This section presents **all figures included in the `figs/` directory**, with concise technical explanations describing **what is shown, why it matters, and how it supports the CIDT framework**.
 
 ---
 
-## 🔁 Interventional Validation
-
+### Figure 1: Overall CIDT Framework
 <p align="center">
-  <img src="Results/SectionF_CausalGraph_Interventions/interventional_analysis.png" width="85%">
+  <img src="figs/cidt.png" width="85%">
 </p>
 
-CIDT evaluates decisions under explicit do-interventions on V2X latency, driver behavior, and environmental conditions.
+**Explanation:**  
+This figure illustrates the complete **Causal-Invariant Digital Twin (CIDT)** pipeline, including sensor–event fault modeling, invariant representation learning, structural causal twin construction, and interventional decision validation. The sequential design ensures that uncertainty from sensing and communication is handled *prior* to causal reasoning.
+
+---
+
+### Figure 2: Structural Causal Twin Model
+<p align="center">
+  <img src="figs/structural_causal_twin_model.png" width="85%">
+</p>
+
+**Explanation:**  
+The structural causal model (SCM) defines causal dependencies among latent vehicle dynamics, driver behavior, environment context, communication reliability, fault variables, actions, and outcomes. This representation enables counterfactual reasoning via do-interventions.
+
+---
+
+### Figure 3: Learned Causal Graph
+<p align="center">
+  <img src="figs/causal_graph.png" width="65%">
+</p>
+
+**Explanation:**  
+The learned causal graph captures directional causal relations inferred from invariant latent representations. Edges represent structural dependencies used during interventional simulation, not correlations learned directly from raw features.
+
+---
+
+### Figure 4: Causal Effect Decomposition
+<p align="center">
+  <img src="figs/causal_effect_decomposition.png" width="75%">
+</p>
+
+**Explanation:**  
+This figure decomposes the total decision outcome into direct, indirect, and mediated causal effects. It highlights how environmental and communication factors influence decisions through specific causal pathways.
+
+---
+
+### Figure 5: Environment Distribution by Name
+<p align="center">
+  <img src="figs/env_distribution_by_name_WITH_LEGEND.png" width="80%">
+</p>
+
+**Explanation:**  
+The distribution of samples across environments defined by weather, road type, and traffic density. These environment partitions are used to induce controlled distribution shifts for robustness evaluation.
+
+---
+
+### Figure 6: ERM vs IRM under Distribution Shift
+<p align="center">
+  <img src="figs/erm-irm.png" width="80%">
+</p>
+
+**Explanation:**  
+Comparison of empirical risk minimization (ERM) and invariant risk minimization (IRM). While IRM enforces invariance, both approaches fail to provide reliable decision validation under strong shifts, motivating causal modeling.
+
+---
+
+### Figure 7: Domain-Adversarial Neural Network (DANN)
+<p align="center">
+  <img src="figs/dann.png" width="70%">
+</p>
+
+**Explanation:**  
+DANN reduces domain distinguishability but collapses to majority-class predictions under shift, resulting in high false-safe rates despite apparent domain alignment.
+
+---
+
+### Figure 8: GroupDRO Worst-Group Optimization
+<p align="center">
+  <img src="figs/groupdro.png" width="70%">
+</p>
+
+**Explanation:**  
+GroupDRO optimizes worst-case group risk but remains correlation-driven, overfitting minority groups and failing to generalize under unseen shifts.
+
+---
+
+### Figure 9: Predictive vs Invariant Metrics
+<p align="center">
+  <img src="figs/predictive_vs_invariant_all_metrics.png" width="85%">
+</p>
+
+**Explanation:**  
+Predictive performance metrics diverge from invariant robustness metrics, demonstrating that high accuracy does not imply safe or stable decision validation.
+
+---
+
+### Figure 10: Loss Decomposition Analysis
+<p align="center">
+  <img src="figs/loss_decomposition.png" width="80%">
+</p>
+
+**Explanation:**  
+Loss components are decomposed into predictive error, invariant penalty, and robustness gap, highlighting the contribution of invariance enforcement in CIDT.
+
+---
+
+### Figure 11: Fault Classification Comparison
+<p align="center">
+  <img src="figs/fault_classification_comparison.png" width="80%">
+</p>
+
+**Explanation:**  
+Comparison of fault detection accuracy across models. SEFN achieves near-perfect fault discrimination without leaking fault information into decision prediction.
+
+---
+
+### Figure 12: Sensor–Event Fault Network (SEFN)
+<p align="center">
+  <img src="figs/sefn.png" width="70%">
+</p>
+
+**Explanation:**  
+SEFN models latent reliability of sensors and events over time, producing fault likelihood estimates that are used exclusively for causal attribution and risk gating.
+
+---
+
+### Figure 13: SEFN Event Importance (Radar + Events)
+<p align="center">
+  <img src="figs/sefn_ablation_radar_plus_event_importance.png" width="85%">
+</p>
+
+**Explanation:**  
+Event importance visualization showing how different sensing modalities and events contribute to fault likelihood estimation.
+
+---
+
+### Figure 14: Sample Efficiency AUROC Convergence
+<p align="center">
+  <img src="figs/sample_efficiency_auroc_convergence.png" width="80%">
+</p>
+
+**Explanation:**  
+CIDT maintains stable validation performance with limited training data, demonstrating strong sample efficiency compared to correlation-based baselines.
+
+---
+
+### Figure 15: Fairness Metrics Across Groups
+<p align="center">
+  <img src="figs/fairness_NxN_all_metrics.png" width="85%">
+</p>
+
+**Explanation:**  
+Group-wise evaluation of risk stability and false-safe rates across sensitive attributes. CIDT shows uniform behavior without explicit demographic conditioning.
+
+---
+
+### Figure 16: Grouped Experimental Results
+<p align="center">
+  <img src="figs/sectionG_grouped_bar_results.png" width="80%">
+</p>
+
+**Explanation:**  
+Aggregated comparison across experimental sections, summarizing robustness, fairness, and stability trends across all evaluated methods.
+
+---
+
+### Summary Observation
+
+Across all figures, results consistently show that **correlation-based robustness methods fail under distribution shift**, while **CIDT achieves stable, interpretable, and ethically consistent decision validation through causal invariance and interventions**.
+
+---
+
 
 ---
 
