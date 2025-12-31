@@ -1,0 +1,4 @@
+Event,Weight,AbsWeight,NormAbsWeight
+geofencing_violation,0.910162,0.910162,0.41575527
+anomalous_event,0.94330055,0.94330055,0.4308927
+route_anomaly,0.33571488,0.33571488,0.15335208

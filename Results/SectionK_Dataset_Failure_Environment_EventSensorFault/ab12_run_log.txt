@@ -1,0 +1,8 @@
+[ab12] N=120000 | fault_rate=0.018608
+=== [ab12] SAVED OUTPUTS ===
+- Excel: /content/drive/MyDrive/CausalDigitalTwin/Results/Ablation12_EventSensorFault/Tables/ab12_SEFN_ALL_RESULTS_WITH_CI.xlsx
+- Weights CSV: /content/drive/MyDrive/CausalDigitalTwin/Results/Ablation12_EventSensorFault/Tables/ab12_sefn_weights.csv
+- Gating sample: /content/drive/MyDrive/CausalDigitalTwin/Results/Ablation12_EventSensorFault/Tables/ab12_sefn_cidt_gating_sample.xlsx
+- Models: /content/drive/MyDrive/CausalDigitalTwin/Results/Ablation12_EventSensorFault/Models/ab12_sefn_fp32.pt | /content/drive/MyDrive/CausalDigitalTwin/Results/Ablation12_EventSensorFault/Models/ab12_sefn_int8.pt
+- Plots folder: /content/drive/MyDrive/CausalDigitalTwin/Results/Ablation12_EventSensorFault/Plots
+- Log: /content/drive/MyDrive/CausalDigitalTwin/Results/Ablation12_EventSensorFault/Logs/ab12_run_log.txt
