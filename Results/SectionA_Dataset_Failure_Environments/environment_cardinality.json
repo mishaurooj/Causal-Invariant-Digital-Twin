@@ -1,0 +1,5 @@
+{
+    "num_env_coarse": 4,
+    "num_env_medium": 12,
+    "num_env_full": 36
+}
