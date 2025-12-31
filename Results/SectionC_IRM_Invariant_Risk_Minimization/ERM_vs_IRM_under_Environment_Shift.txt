@@ -1,0 +1,113 @@
+Predictive Learning vs Invariant Learning under Environment Shift
+================================================================================
+
+ENVIRONMENT GRANULARITY: COARSE
+--------------------------------------------------------------------------------
+
+ERM – LogReg
+AUROC: 0.5018
+AUPRC: 0.2940
+Brier: 0.2072
+IRG: 0.0014  (post-hoc)
+Train_s: 3.225
+Test_s: 0.009
+
+ERM – MLP
+AUROC: 0.4951
+AUPRC: 0.2894
+Brier: 0.2168
+IRG: 0.0016  (post-hoc)
+Train_s: 16.027
+Test_s: 0.469
+
+ERM – XGBoost
+AUROC: 0.4973
+AUPRC: 0.2913
+Brier: 0.2118
+IRG: 0.0005  (post-hoc)
+Train_s: 1.146
+Test_s: 0.936
+
+IRM
+AUROC: 0.5015
+AUPRC: 0.2935
+Brier: 0.5346
+IRG: 0.0094  (optimized)
+Train_s: 3.297
+Test_s: 0.272
+
+================================================================================
+
+ENVIRONMENT GRANULARITY: MEDIUM
+--------------------------------------------------------------------------------
+
+ERM – LogReg
+AUROC: 0.5009
+AUPRC: 0.2904
+Brier: 0.2061
+IRG: 0.0076  (post-hoc)
+Train_s: 1.837
+Test_s: 0.001
+
+ERM – MLP
+AUROC: 0.4928
+AUPRC: 0.2854
+Brier: 0.2108
+IRG: 0.0080  (post-hoc)
+Train_s: 51.075
+Test_s: 0.065
+
+ERM – XGBoost
+AUROC: 0.4969
+AUPRC: 0.2880
+Brier: 0.2074
+IRG: 0.0073  (post-hoc)
+Train_s: 2.902
+Test_s: 0.180
+
+IRM
+AUROC: 0.5010
+AUPRC: 0.2947
+Brier: 0.4117
+IRG: 0.0241  (optimized)
+Train_s: 13.891
+Test_s: 0.016
+
+================================================================================
+
+ENVIRONMENT GRANULARITY: FULL
+--------------------------------------------------------------------------------
+
+ERM – LogReg
+AUROC: 0.4947
+AUPRC: 0.2902
+Brier: 0.2074
+IRG: 0.0236  (post-hoc)
+Train_s: 1.060
+Test_s: 0.002
+
+ERM – MLP
+AUROC: 0.4966
+AUPRC: 0.2916
+Brier: 0.2125
+IRG: 0.0211  (post-hoc)
+Train_s: 41.809
+Test_s: 0.070
+
+ERM – XGBoost
+AUROC: 0.4962
+AUPRC: 0.2892
+Brier: 0.2090
+IRG: 0.0218  (post-hoc)
+Train_s: 3.385
+Test_s: 0.579
+
+IRM
+AUROC: 0.4982
+AUPRC: 0.2924
+Brier: 0.5362
+IRG: 0.0943  (optimized)
+Train_s: 11.911
+Test_s: 0.029
+
+================================================================================
