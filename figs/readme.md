@@ -14,7 +14,7 @@ easy navigation for reviewers.
 ![CIDT Architecture](./cidt.png)
 
 ### Structural Causal Twin Model
-![Structural Causal Twin](./structural_causal_twin_model.png)
+![Structural Causal Twin](./sctm.png)
 
 ### Learned Causal Graph
 ![Causal Graph](./causal_graph.png)
@@ -88,30 +88,4 @@ from spurious correlations.
 
 ### Section G — Grouped Bar Results
 ![Grouped Bar Results](./sectionG_grouped_bar_results.png)
-
----
-
-## 📌 Figure Inventory
-
-| Category | Files |
-|-------|------|
-| Framework | `cidt.png`, `structural_causal_twin_model.png` |
-| Causal | `causal_graph.png`, `causal_effect_decomposition.png` |
-| Robust ML | `erm-irm.png`, `dann.png`, `groupdro.png` |
-| Fault Modeling | `sefn.png`, `sefn_ablation_radar_plus_event_importance.png` |
-| Fairness | `fairness_NxN_all_metrics.png` |
-| Dataset | `env_distribution_by_name_WITH_LEGEND.png` |
-| Efficiency | `sample_efficiency_auroc_convergence.png` |
-| Aggregates | `sectionG_grouped_bar_results.png` |
-
----
-
-## 📖 Usage in Paper
-
-These figures are referenced across:
-- **Sections A–L** (Results & Ablations)
-- Main framework and methodology sections
-- Ethical AI and robustness evaluation
-
-All figures are final, publication-quality, and aligned with IEEE Transactions standards.
 
