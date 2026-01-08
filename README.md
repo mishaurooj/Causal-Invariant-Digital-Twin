@@ -179,12 +179,30 @@ This repository presents the **first end-to-end Causal-Invariant Digital Twin (C
 ---
 
 ## 📌 Paper Contributions
-
-This repository accompanies the paper:
-
-**“Causal-Invariant Digital Twin for Robust Autonomous Vehicle Decision Validation under 5G-V2X Distribution Shifts”**
-
 Key contributions include causal-invariant validation, sensor–event fault modeling, structural causal twins with interventions, ethical AI robustness, and edge-feasible deployment.
+
+<div style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); padding:18px; border-radius:10px; color:white;">
+
+The key contributions of this work are summarized below.
+Each contribution is methodologically distinct and addresses a specific limitation of existing Digital Twin frameworks.
+
+</div>
+🧠 Causal-Invariant Digital Twin (CIDT)
+<div style="background:#e3f2fd; padding:12px; border-left:6px solid #1565c0; border-radius:6px;"> A novel <b>Causal-Invariant Digital Twin (CIDT)</b> framework is introduced to validate <b>autonomous vehicle decision robustness</b> under <b>V2X-induced distribution shifts</b>, explicitly prioritizing <b>decision validation</b> over policy learning or predictive accuracy. </div>
+🔒 Invariant Representation Learning
+<div style="background:#e8f5e9; padding:12px; border-left:6px solid #2e7d32; border-radius:6px;"> An <b>invariant representation learning</b> module based on <b>Invariant Risk Minimization (IRM)</b> is employed to isolate <b>causal, decision-relevant factors</b> while suppressing <b>environment- and communication-dependent spurious correlations</b>. </div>
+🔗 Structural Causal Twin Model (SCTM)
+<div style="background:#fff3e0; padding:12px; border-left:6px solid #ef6c00; border-radius:6px;"> A <b>Structural Causal Twin Model (SCTM)</b> is formulated to enable <b>causal attribution</b> and <b>counterfactual reasoning</b>. Its behavior and inherent limitations under increasing distribution shift are systematically characterized. </div>
+🧪 Intervention-Based Decision Validation
+<div style="background:#f3e5f5; padding:12px; border-left:6px solid #6a1b9a; border-radius:6px;"> An <b>intervention-based validation mechanism</b> grounded in <b>do-calculus</b> is introduced to evaluate decision robustness under controlled perturbations in <b>sensing reliability, V2X communication quality, and driving behavior</b>. </div>
+⚠️ Sensor–Event Fault Network (SEFN)
+<div style="background:#fbe9e7; padding:12px; border-left:6px solid #c62828; border-radius:6px;"> A dedicated <b>Sensor–Event Fault Network (SEFN)</b> is developed to explicitly model <b>sensing, event, and communication unreliability</b>, enabling <b>fault-aware system state abstraction</b> without inflating predictive confidence. </div>
+🚀 Edge-Feasible Deployment Analysis
+<div style="background:#e0f2f1; padding:12px; border-left:6px solid #00695c; border-radius:6px;"> <b>Edge-feasible CIDT variants</b> are evaluated using <b>post-training dynamic quantization</b>, revealing efficiency–validity trade-offs and demonstrating that causal validation reliability can be preserved under deployment constraints. </div>
+⚖️ Ethical Reliability Assessment
+<div style="background:#ede7f6; padding:12px; border-left:6px solid #4527a0; border-radius:6px;"> An <b>ethical reliability evaluation</b> is conducted using <b>subgroup-wise risk stability</b> and <b>false-safe analysis</b>, ensuring consistent and trustworthy decision validation across heterogeneous operating conditions. </div>
+✅ Summary Insight
+<div style="background:#263238; color:white; padding:14px; border-radius:8px;"> Collectively, these contributions establish <b>causal invariance</b> as a necessary foundation for <b>trustworthy Digital Twin–based validation</b> of autonomous vehicle decisions under real-world distribution shifts. </div>
 
 ---
 
