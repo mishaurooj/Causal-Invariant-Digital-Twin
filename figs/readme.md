@@ -19,12 +19,15 @@ easy navigation for reviewers.
 ### Learned Causal Graph
 ![Causal Graph](./causal_graph.png)
 
+### Sensor--Event Fault Network (SEFN)
+![Causal Graph](./sefn.png)
+
 ---
 
 ## 🔁 Causal Effects & Decomposition
 
 ### Causal Effect Decomposition
-![Causal Effect Decomposition](./causal_effect_decomposition.png)
+![Causal Effect Decomposition](./causal_effect_decomposition..png)
 
 ### Loss Decomposition Analysis
 ![Loss Decomposition](./loss_decomposition.png)
