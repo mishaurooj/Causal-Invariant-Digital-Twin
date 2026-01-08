@@ -1,7 +1,7 @@
 # Causal-Invariant Digital Twin (CIDT)
 
-### Robust Autonomous Vehicle Decision Validation under 5G-V2X Distribution Shifts  
-**IEEE Transactions–Ready Research Repository**
+### Causal-Invariant Digital Twin for Robust Autonomous Vehicle Decision Validation under 5G-V2X Distribution Shifts
+**IEEE Transactions Research Paper Repository**
 
 ---
 
