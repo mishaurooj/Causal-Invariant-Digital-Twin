@@ -229,7 +229,7 @@ https://www.kaggle.com/datasets/datasetengineer/driver-behavior-and-route-anomal
 ## 🖼️ Experimental Evidence
 ---
 
-### Figure 1: Overall CIDT Framework
+### Overall CIDT Framework
 <p align="center">
   <img src="figs/cidt.png" width="100%">
 </p>
@@ -239,9 +239,9 @@ This figure illustrates the complete **Causal-Invariant Digital Twin (CIDT)** pi
 
 ---
 
-### Figure 2: Structural Causal Twin Model
+### Structural Causal Twin Model
 <p align="center">
-  <img src="figs/structural_causal_twin_model.png" width="100%">
+  <img src="figs/sctm.png" width="100%">
 </p>
 
 **Explanation:**  
@@ -249,7 +249,17 @@ The structural causal model (SCM) defines causal dependencies among latent vehic
 
 ---
 
-### Figure 3: Learned Causal Graph
+### Sensor--Event Fault Network (SEFN)
+<p align="center">
+  <img src="figs/sefn.png" width="100%">
+</p>
+
+**Explanation:**  
+SEFN is a standalone reliability estimation model whose sole purpose is fault attribution. 
+
+---
+
+### Learned Causal Graph
 <p align="center">
   <img src="figs/causal_graph.png" width="1005%">
 </p>
@@ -259,7 +269,7 @@ The learned causal graph captures directional causal relations inferred from inv
 
 ---
 
-### Figure 4: Causal Effect Decomposition
+### Causal Effect Decomposition
 <p align="center">
   <img src="figs/causal_effect_decomposition..png" width="100%">
 </p>
@@ -269,43 +279,13 @@ This figure decomposes the total decision outcome into direct, indirect, and med
 
 ---
 
-### Figure 5: Environment Distribution by Name
+### DABRA-24 Dataset Environment Distribution 
 <p align="center">
   <img src="figs/env_distribution_by_name_WITH_LEGEND.png" width="100%">
 </p>
 
 **Explanation:**  
 The distribution of samples across environments defined by weather, road type, and traffic density. These environment partitions are used to induce controlled distribution shifts for robustness evaluation.
-
----
-
-### Figure 6: ERM vs IRM under Distribution Shift
-<p align="center">
-  <img src="figs/erm-irm.png" width="80%">
-</p>
-
-**Explanation:**  
-Comparison of empirical risk minimization (ERM) and invariant risk minimization (IRM). While IRM enforces invariance, both approaches fail to provide reliable decision validation under strong shifts, motivating causal modeling.
-
----
-
-### Figure 7: Domain-Adversarial Neural Network (DANN)
-<p align="center">
-  <img src="figs/dann.png" width="70%">
-</p>
-
-**Explanation:**  
-DANN reduces domain distinguishability but collapses to majority-class predictions under shift, resulting in high false-safe rates despite apparent domain alignment.
-
----
-
-### Figure 8: GroupDRO Worst-Group Optimization
-<p align="center">
-  <img src="figs/groupdro.png" width="70%">
-</p>
-
-**Explanation:**  
-GroupDRO optimizes worst-case group risk but remains correlation-driven, overfitting minority groups and failing to generalize under unseen shifts.
 
 ---
 
@@ -319,7 +299,7 @@ Predictive performance metrics diverge from invariant robustness metrics, demons
 
 ---
 
-### Figure 10: Loss Decomposition Analysis
+### Loss Decomposition Analysis
 <p align="center">
   <img src="figs/loss_decomposition.png" width="80%">
 </p>
@@ -327,9 +307,8 @@ Predictive performance metrics diverge from invariant robustness metrics, demons
 **Explanation:**  
 Loss components are decomposed into predictive error, invariant penalty, and robustness gap, highlighting the contribution of invariance enforcement in CIDT.
 
----
 
-### Figure 11: Fault Classification Comparison
+### Fault Classification Comparison
 <p align="center">
   <img src="figs/fault_classification_comparison.png" width="80%">
 </p>
@@ -339,17 +318,7 @@ Comparison of fault detection accuracy across models. SEFN achieves near-perfect
 
 ---
 
-### Figure 12: Sensor–Event Fault Network (SEFN)
-<p align="center">
-  <img src="figs/sefn.png" width="70%">
-</p>
-
-**Explanation:**  
-SEFN models latent reliability of sensors and events over time, producing fault likelihood estimates that are used exclusively for causal attribution and risk gating.
-
----
-
-### Figure 13: SEFN Event Importance (Radar + Events)
+### SEFN Event Importance (Radar + Events)
 <p align="center">
   <img src="figs/sefn_ablation_radar_plus_event_importance.png" width="85%">
 </p>
@@ -359,7 +328,7 @@ Event importance visualization showing how different sensing modalities and even
 
 ---
 
-### Figure 14: Sample Efficiency AUROC Convergence
+### Sample Efficiency AUROC Convergence
 <p align="center">
   <img src="figs/sample_efficiency_auroc_convergence.png" width="80%">
 </p>
@@ -369,7 +338,7 @@ CIDT maintains stable validation performance with limited training data, demonst
 
 ---
 
-### Figure 15: Fairness Metrics Across Groups
+### Fairness Metrics Across Groups
 <p align="center">
   <img src="figs/fairness_NxN_all_metrics.png" width="85%">
 </p>
@@ -379,7 +348,7 @@ Group-wise evaluation of risk stability and false-safe rates across sensitive at
 
 ---
 
-### Figure 16: Grouped Experimental Results
+### Grouped Experimental Results
 <p align="center">
   <img src="figs/sectionG_grouped_bar_results.png" width="80%">
 </p>
@@ -409,14 +378,6 @@ README.md    → This document
 
 ---
 
-## 🧾 Reproducibility
-
-- Metrics provided in CSV / XLSX / TXT
-- Deterministic seeds and logged runs
-- Apache 2.0 license
-
----
-
 ## 🏁 Key Takeaway
 
 **Robustness without causality is illusory.**  
@@ -428,6 +389,3 @@ CIDT validates autonomous decisions under distribution shifts using causal invar
 Apache License 2.0
 
 ---
-
-## 📬 Contact
-For questions or reproducibility inquiries, please open a GitHub issue.
