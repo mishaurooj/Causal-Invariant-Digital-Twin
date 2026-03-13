@@ -1,0 +1,4 @@
+Group,MeanRisk,FalseSafeRate
+weather_conditions_Sunny,0.43354395,0.0
+weather_conditions_Rainy,0.43778527,0.0
+weather_conditions_Foggy,0.426166,0.0
