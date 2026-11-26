@@ -11,10 +11,6 @@ Main repository:
 
 https://github.com/mishaurooj/Causal-Invariant-Digital-Twin/tree/main
 
-The main repository is organized into `Code`, `Dataset`, `Results`, and
-`figs`. The current reviewer-revision scripts are located in
-`Code/Rev2`.
-
 ## Environment Setup
 
 Python 3.10 or later is recommended.
